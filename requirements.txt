@@ -1,0 +1,6 @@
+This are the requirements
+	so download it before hand
+		pygame
+		opencv-python
+		mediapipe
+		numpy
