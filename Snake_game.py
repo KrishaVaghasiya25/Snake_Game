@@ -14,6 +14,15 @@ FIST_THRESHOLD = 0.05
 
 # ---------------- INIT ----------------
 pygame.init()
+pygame.mixer.init()
+
+eat_sound = pygame.mixer.Sound("Snakegame-eat.mp3")
+game_over_sound = pygame.mixer.Sound("Snakegame-end.mp3")
+
+eat_sound.set_volume(0.5)
+game_over_sound.set_volume(0.6)
+
+
 clock = pygame.time.Clock()
 
 mp_hands = mp.solutions.hands
@@ -99,6 +108,7 @@ while True:
 
         # Check food collision
         if np.linalg.norm(head_pos - np.array(food)) < SNAKE_RADIUS*2:
+            eat_sound.play() 
             score += 1
             food = [random.randint(20, WIDTH-20), random.randint(20, HEIGHT-20)]
 
@@ -116,6 +126,8 @@ while True:
     cv2.imshow("Snake Game | LEFT=Game RIGHT=Camera", combined)
 
     if cv2.waitKey(1) & 0xFF == 27:
+        game_over_sound.play()
+        pygame.time.delay(500)
         break
 
     clock.tick(60)
