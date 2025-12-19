@@ -4,7 +4,7 @@ This is a hand-controlled snake game using Python, Pygame, OpenCV, and Mediapipe
 I adapted the original code and added improvements to make the snake move naturally with your left and right hand movements.  
 Unlike traditional grid-based snake games, the snake **follows your finger smoothly**, moving point-to-point for precise control.
 
-![Game Screenshot](screenshot_snakegame.png)
+![Game Screenshot](screenshot_Snakegame.png)
 
 ## How to Run
 
@@ -24,6 +24,12 @@ Unlike traditional grid-based snake games, the snake **follows your finger smoot
 - Automatic growth when eating food
 - Countdown timer at the start
 - Simple and fun hand-controlled gameplay
+
+## 🔊 Sound Effects (Day 1 Update)
+
+- Added sound effect when snake eats food
+- Added game over sound when pressing ESC
+- Volume set for smooth gameplay
 
 ## Requirements
 
