@@ -4,7 +4,7 @@ This is a hand-controlled snake game using Python, Pygame, OpenCV, and Mediapipe
 I adapted the original code and added improvements to make the snake move naturally with your left and right hand movements.  
 Unlike traditional grid-based snake games, the snake **follows your finger smoothly**, moving point-to-point for precise control.
 
-![Game Screenshot](screenshot_Snakegame.png)
+![Game Screenshot](screenshot_snakegame.png)
 
 ## How to Run
 
@@ -36,7 +36,7 @@ Unlike traditional grid-based snake games, the snake **follows your finger smoot
  -Added 2 Food insted of Red dot
  -Grapes & Broccali 
 
- ![Game Screenshot](screenshot_Snakegame1.png)
+ ![Game Screenshot](screenshot_snakegame1.png)
 
 ## Requirements
 
